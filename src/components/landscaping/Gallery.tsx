@@ -13,70 +13,70 @@ const categories = [
   'Retaining Walls',
 ];
 
-// Mock gallery images with categories
+// Professional gallery images - accurately matching categories
 const projects = [
   {
     id: 1,
     category: 'Residential Gardens',
     title: 'Modern Garden Transformation',
     description: 'Complete backyard makeover with native plants and entertainment area',
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/residential-garden-1.png',
   },
   {
     id: 2,
     category: 'Artificial Turf',
     title: 'Premium Artificial Lawn',
     description: 'Low-maintenance artificial turf installation for family home',
-    imageUrl: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/artificial-turf-1.png',
   },
   {
     id: 3,
     category: 'Water Features',
     title: 'Custom Water Feature',
     description: 'Elegant fountain centerpiece with natural stone surround',
-    imageUrl: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/water-feature-1.png',
   },
   {
     id: 4,
     category: 'Driveways & Pathways',
     title: 'Paved Driveway',
     description: 'Durable paving with decorative border patterns',
-    imageUrl: 'https://images.unsplash.com/photo-1605908502724-9093a79a1030?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/driveway-paving-1.png',
   },
   {
     id: 5,
     category: 'Commercial Landscaping',
     title: 'Office Complex Landscape',
     description: 'Professional landscaping for corporate environment',
-    imageUrl: 'https://images.unsplash.com/photo-1563482054633-d5e8d6dd9c3b?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/commercial-landscaping-1.png',
   },
   {
     id: 6,
     category: 'Retaining Walls',
     title: 'Tiered Retaining Wall',
     description: 'Multi-level stone retaining wall with integrated planting',
-    imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/retaining-wall-1.png',
   },
   {
     id: 7,
     category: 'Residential Gardens',
     title: 'Cottage Garden Design',
     description: 'Colorful perennial garden with natural stone paths',
-    imageUrl: 'https://images.unsplash.com/photo-1564754943164-e83b2b32d1f6?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/residential-garden-2.png',
   },
   {
     id: 8,
     category: 'Artificial Turf',
     title: 'Rooftop Turf Installation',
     description: 'Synthetic grass for urban rooftop space',
-    imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/artificial-turf-2.png',
   },
   {
     id: 9,
     category: 'Water Features',
     title: 'Natural Pond Feature',
     description: 'Eco-friendly pond with aquatic plants and fish',
-    imageUrl: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&auto=format&fit=crop',
+    imageUrl: '/generated/water-feature-2.png',
   },
 ];
 
