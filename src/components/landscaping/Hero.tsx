@@ -4,14 +4,14 @@ import { ArrowRight, Award, Users, Sparkles } from 'lucide-react';
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Professional Background Image */}
-      <div className="absolute inset-0">
+      {/* Professional Background Image - Restricted Height */}
+      <div className="absolute inset-0 h-[500px] md:h-[600px]">
         <img
           src="/generated/backyard-hero.png"
           alt="Beautiful backyard landscaping with colorful flowers and lush green lawn"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-white/85"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/85 to-white"></div>
       </div>
 
       <div className="container mx-auto px-4 py-20 md:py-32 relative">
@@ -22,30 +22,30 @@ export function Hero() {
             <span className="text-sm font-semibold">Bloemfontein's Premier Landscaping Service</span>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+          {/* Main Heading - Enhanced Visibility */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight text-[hsl(140,40%,15%)] drop-shadow-sm">
             Transform Your <span className="text-primary">Outdoor Space</span> Into Paradise
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-[hsl(140,30%,25%)] mb-10 leading-relaxed max-w-3xl mx-auto font-medium">
             From artificial turf installation to custom landscape design, we bring your outdoor vision to life with professional craftsmanship and attention to detail.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Fixed Text Visibility */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Link
               href="/booking"
-              className="bg-[hsl(140,65%,28%)] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[hsl(140,55%,45%)] transition-all hover:scale-105 shadow-lg flex items-center space-x-2 w-full sm:w-auto justify-center"
+              className="bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg flex items-center space-x-2 w-full sm:w-auto justify-center"
             >
-              <span className="text-white">Book Free Consultation</span>
-              <ArrowRight className="h-5 w-5 text-white" />
+              <span>Book Free Consultation</span>
+              <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               href="/gallery"
-              className="bg-white text-[hsl(140,40%,15%)] border-2 border-[hsl(30,10%,85%)] px-8 py-4 rounded-lg font-bold text-lg hover:border-[hsl(140,65%,28%)] hover:text-[hsl(140,65%,28%)] transition-all w-full sm:w-auto justify-center flex items-center"
+              className="bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto justify-center flex items-center"
             >
-              <span className="text-[hsl(140,40%,15%)]">Get a Free Quote</span>
+              <span>Get a Free Quote</span>
             </Link>
           </div>
 
