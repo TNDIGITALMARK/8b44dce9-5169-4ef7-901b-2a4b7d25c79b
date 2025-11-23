@@ -119,13 +119,17 @@ export function Services() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="/booking"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg w-full sm:w-auto text-center"
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg w-full sm:w-auto text-center"
+                style={{
+                  backgroundColor: 'hsl(140 65% 28%)',
+                  color: 'hsl(0 0% 100%)',
+                }}
               >
                 Book Free Consultation
               </a>
               <a
                 href="tel:0796125659"
-                className="bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto text-center"
+                className="inline-flex items-center justify-center bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto text-center"
               >
                 Call: 079 612 5659
               </a>

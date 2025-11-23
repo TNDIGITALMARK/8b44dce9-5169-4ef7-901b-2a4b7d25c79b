@@ -32,18 +32,22 @@ export function Hero() {
             From artificial turf installation to custom landscape design, we bring your outdoor vision to life with professional craftsmanship and attention to detail.
           </p>
 
-          {/* CTA Buttons - Fixed Text Visibility */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          {/* CTA Buttons - Enhanced Visibility */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 relative z-10">
             <Link
               href="/booking"
-              className="bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg flex items-center space-x-2 w-full sm:w-auto justify-center"
+              className="inline-flex items-center justify-center space-x-2 bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto"
+              style={{
+                backgroundColor: 'hsl(140 65% 28%)',
+                color: 'hsl(0 0% 100%)',
+              }}
             >
               <span>Book Free Consultation</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
             <Link
               href="/gallery"
-              className="bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto justify-center flex items-center"
+              className="inline-flex items-center justify-center bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto"
             >
               <span>Get a Free Quote</span>
             </Link>
