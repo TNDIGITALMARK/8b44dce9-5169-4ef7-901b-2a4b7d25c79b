@@ -7,8 +7,8 @@ export function Hero() {
       {/* Professional Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/generated/hero-background.png"
-          alt="Professional landscaping"
+          src="/generated/backyard-hero.png"
+          alt="Beautiful backyard landscaping with colorful flowers and lush green lawn"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-white/85"></div>
@@ -36,16 +36,16 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Link
               href="/booking"
-              className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg flex items-center space-x-2 w-full sm:w-auto justify-center"
+              className="bg-[hsl(140,65%,28%)] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[hsl(140,55%,45%)] transition-all hover:scale-105 shadow-lg flex items-center space-x-2 w-full sm:w-auto justify-center"
             >
-              <span>Get Free Quote</span>
-              <ArrowRight className="h-5 w-5" />
+              <span className="text-white">Book Free Consultation</span>
+              <ArrowRight className="h-5 w-5 text-white" />
             </Link>
             <Link
               href="/gallery"
-              className="bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto justify-center flex items-center"
+              className="bg-white text-[hsl(140,40%,15%)] border-2 border-[hsl(30,10%,85%)] px-8 py-4 rounded-lg font-bold text-lg hover:border-[hsl(140,65%,28%)] hover:text-[hsl(140,65%,28%)] transition-all w-full sm:w-auto justify-center flex items-center"
             >
-              View Our Work
+              <span className="text-[hsl(140,40%,15%)]">Get a Free Quote</span>
             </Link>
           </div>
 
