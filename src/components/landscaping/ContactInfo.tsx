@@ -20,8 +20,8 @@ export function ContactInfo() {
             {/* Phone Contact */}
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-border rounded-xl p-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-primary text-primary-foreground p-4 rounded-lg">
-                  <Phone className="h-8 w-8" />
+                <div className="p-4 rounded-lg" style={{ backgroundColor: 'hsl(140 65% 28%)', color: 'white' }}>
+                  <Phone className="h-8 w-8" style={{ color: 'white' }} />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-2">Call Us</h3>
@@ -41,8 +41,8 @@ export function ContactInfo() {
             {/* Location */}
             <div className="bg-gradient-to-br from-accent/5 to-primary/5 border border-border rounded-xl p-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-accent text-accent-foreground p-4 rounded-lg">
-                  <MapPin className="h-8 w-8" />
+                <div className="p-4 rounded-lg" style={{ backgroundColor: 'hsl(140 55% 45%)', color: 'white' }}>
+                  <MapPin className="h-8 w-8" style={{ color: 'white' }} />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-2">Visit Our Office</h3>

@@ -114,11 +114,29 @@ export function Gallery() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2.5 rounded-lg font-medium transition-all ${
                   activeCategory === category
-                    ? 'bg-primary text-primary-foreground shadow-lg scale-105'
-                    : 'bg-white text-foreground border border-border hover:border-primary hover:text-primary'
+                    ? 'shadow-lg scale-105'
+                    : 'border hover:border-primary'
                 }`}
+                style={
+                  activeCategory === category
+                    ? {
+                        backgroundColor: 'hsl(140 65% 28%)',
+                        color: 'white',
+                      }
+                    : {
+                        backgroundColor: 'white',
+                        color: 'hsl(140 40% 15%)',
+                        borderColor: 'hsl(30 10% 85%)',
+                      }
+                }
               >
-                {category}
+                <span
+                  style={{
+                    color: activeCategory === category ? 'white' : 'hsl(140 40% 15%)',
+                  }}
+                >
+                  {category}
+                </span>
               </button>
             ))}
           </div>
@@ -162,9 +180,13 @@ export function Gallery() {
             </p>
             <a
               href="/booking"
-              className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg"
+              className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg"
+              style={{
+                backgroundColor: 'hsl(140 65% 28%)',
+                color: 'white',
+              }}
             >
-              Start Your Project
+              <span style={{ color: 'white' }}>Start Your Project</span>
             </a>
           </div>
         </div>

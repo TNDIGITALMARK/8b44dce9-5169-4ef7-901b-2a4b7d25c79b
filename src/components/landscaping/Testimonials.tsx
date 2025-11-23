@@ -141,9 +141,13 @@ export function Testimonials() {
             </p>
             <a
               href="/booking"
-              className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg"
+              className="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg"
+              style={{
+                backgroundColor: 'hsl(140 65% 28%)',
+                color: 'white',
+              }}
             >
-              Get Your Free Quote
+              <span style={{ color: 'white' }}>Get Your Free Quote</span>
             </a>
           </div>
         </div>

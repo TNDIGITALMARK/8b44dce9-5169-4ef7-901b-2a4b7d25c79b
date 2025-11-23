@@ -39,9 +39,13 @@ export function Header() {
             </a>
             <Link
               href="/booking"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-accent transition-colors"
+              className="px-6 py-2.5 rounded-lg font-semibold transition-colors"
+              style={{
+                backgroundColor: 'hsl(140 65% 28%)',
+                color: 'white',
+              }}
             >
-              Get a Quote
+              <span style={{ color: 'white' }}>Get a Quote</span>
             </Link>
           </div>
 
@@ -85,10 +89,14 @@ export function Header() {
             </a>
             <Link
               href="/booking"
-              className="block bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-semibold hover:bg-accent transition-colors text-center"
+              className="block px-6 py-2.5 rounded-lg font-semibold transition-colors text-center"
+              style={{
+                backgroundColor: 'hsl(140 65% 28%)',
+                color: 'white',
+              }}
               onClick={() => setIsMenuOpen(false)}
             >
-              Get a Quote
+              <span style={{ color: 'white' }}>Get a Quote</span>
             </Link>
           </nav>
         )}

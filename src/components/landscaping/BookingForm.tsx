@@ -197,14 +197,18 @@ export function BookingForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary text-primary-foreground py-4 rounded-lg font-bold text-lg hover:bg-accent transition-all hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                style={{
+                  backgroundColor: 'hsl(140 65% 28%)',
+                  color: 'white',
+                }}
               >
                 {isSubmitting ? (
-                  <span>Sending...</span>
+                  <span style={{ color: 'white' }}>Sending...</span>
                 ) : (
                   <>
-                    <span>Send Request</span>
-                    <Send className="h-5 w-5" />
+                    <span style={{ color: 'white' }}>Send Request</span>
+                    <Send className="h-5 w-5" style={{ color: 'white' }} />
                   </>
                 )}
               </button>

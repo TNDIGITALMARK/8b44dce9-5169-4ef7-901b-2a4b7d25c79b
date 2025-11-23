@@ -36,20 +36,25 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 relative z-10">
             <Link
               href="/booking"
-              className="inline-flex items-center justify-center space-x-2 bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto"
+              className="inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto"
               style={{
                 backgroundColor: 'hsl(140 65% 28%)',
-                color: 'hsl(0 0% 100%)',
+                color: 'white',
               }}
             >
-              <span>Book Free Consultation</span>
-              <ArrowRight className="h-5 w-5" />
+              <span style={{ color: 'white' }}>Book Free Consultation</span>
+              <ArrowRight className="h-5 w-5" style={{ color: 'white' }} />
             </Link>
             <Link
               href="/gallery"
-              className="inline-flex items-center justify-center bg-white text-foreground border-2 border-border px-8 py-4 rounded-lg font-bold text-lg hover:border-primary hover:text-primary transition-all w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-lg transition-all w-full sm:w-auto"
+              style={{
+                backgroundColor: 'white',
+                color: 'hsl(140 40% 15%)',
+                border: '2px solid hsl(30 10% 85%)',
+              }}
             >
-              <span>Get a Free Quote</span>
+              <span style={{ color: 'hsl(140 40% 15%)' }}>Get a Free Quote</span>
             </Link>
           </div>
 

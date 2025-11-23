@@ -143,13 +143,26 @@ export function PricingTable() {
               {/* CTA Button */}
               <a
                 href="#booking-form"
-                className={`block w-full text-center py-3 rounded-lg font-semibold transition-all ${
+                className="block w-full text-center py-3 rounded-lg font-semibold transition-all"
+                style={
                   service.popular
-                    ? 'bg-primary text-primary-foreground hover:bg-accent'
-                    : 'bg-muted text-foreground hover:bg-primary hover:text-primary-foreground'
-                }`}
+                    ? {
+                        backgroundColor: 'hsl(140 65% 28%)',
+                        color: 'white',
+                      }
+                    : {
+                        backgroundColor: 'hsl(30 10% 90%)',
+                        color: 'hsl(140 40% 15%)',
+                      }
+                }
               >
-                Request Quote
+                <span
+                  style={{
+                    color: service.popular ? 'white' : 'hsl(140 40% 15%)',
+                  }}
+                >
+                  Request Quote
+                </span>
               </a>
             </div>
           ))}
