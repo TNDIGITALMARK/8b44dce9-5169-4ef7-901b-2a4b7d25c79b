@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Inside Out Landscaping - Professional Landscaping Services in Bloemfontein",
+  description: "Transform your outdoor space with Inside Out Landscaping. Expert landscaping services including artificial turf, custom design, garden landscaping, paving, water features, and more in Bloemfontein.",
 };
 
 export default function RootLayout({

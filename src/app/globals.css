@@ -1,59 +1,69 @@
 @import "tailwindcss";
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Import Professional Fonts for Landscaping Business */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* ==============================================
+   INSIDE OUT LANDSCAPING DESIGN SYSTEM
+   Professional outdoor aesthetic with earth tones,
+   greens, and natural textures
+   ============================================== */
 
 :root {
-  /* Pure white background with crisp black text */
+  /* Font System - Professional & Modern */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Professional Landscaping Color Palette */
+  /* Primary: Deep Forest Green - Professional and natural */
   --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  --foreground: 140 40% 15%;
 
-  /* Clean white cards with black text */
+  /* Cards with subtle warmth */
   --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  --card-foreground: 140 40% 15%;
 
-  /* Popovers with white background */
+  /* Popovers */
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  --popover-foreground: 140 40% 15%;
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
+  /* Primary: Deep Forest Green - Main brand color */
+  --primary: 140 65% 28%;
   --primary-foreground: 0 0% 100%;
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  /* Secondary: Warm Earth Brown - Natural complement */
+  --secondary: 30 30% 45%;
+  --secondary-foreground: 0 0% 100%;
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 40%;
+  /* Muted: Natural Stone Gray */
+  --muted: 30 10% 90%;
+  --muted-foreground: 140 20% 35%;
 
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
+  /* Accent: Fresh Green - Vibrant nature accent */
+  --accent: 140 55% 45%;
+  --accent-foreground: 0 0% 100%;
 
-  /* Destructive: Clean red */
-  --destructive: 0 70% 50%;
+  /* Destructive: Earthy red */
+  --destructive: 0 65% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Borders: Subtle gray */
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  /* Borders: Soft natural gray */
+  --border: 30 10% 85%;
+  --input: 30 10% 85%;
+  --ring: 140 65% 28%;
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* Natural rounded corners */
+  --radius: 0.5rem;
 
-  /* Sidebar: Clean white with black text */
-  --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
+  /* Sidebar colors */
+  --sidebar-background: 140 65% 28%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 140 55% 45%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-accent: 140 60% 32%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 140 50% 20%;
+  --sidebar-ring: 140 55% 45%;
 }
 
 .dark {
@@ -168,25 +178,160 @@ All colors MUST be HSL.
   border-color: hsl(var(--border));
 }
 
+/* ==============================================
+   GLOBAL RESETS & BASE STYLES
+   ============================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
   font-feature-settings: "rlig" 1, "calt" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* Minimal, clean typography */
+/* ==============================================
+   TYPOGRAPHY SYSTEM
+   Professional hierarchy for landscaping business
+   ============================================== */
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: hsl(var(--foreground));
+  line-height: 1.2;
+  margin-top: 0;
 }
 
-/* Clean button styles */
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+a {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: hsl(var(--accent));
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+/* ==============================================
+   FORM ELEMENTS & BUTTONS
+   ============================================== */
+
+button, input, select, textarea {
+  font-family: var(--font-body);
+}
+
 button {
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input, select, textarea {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 0.625rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 3px hsla(var(--ring) / 0.1);
+}
+
+label {
   font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* ==============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
 }
 
 /* Subtle shadows for depth */
